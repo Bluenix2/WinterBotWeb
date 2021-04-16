@@ -1,5 +1,10 @@
 <template>
-  <nav id="sidebar" :class="{ 'sidebar-active': $store.state.sidebarActive }"></nav>
+  <nav id="sidebar" :class="{ 'sidebar-active': $store.state.sidebarActive }">
+    <!-- Automatically add the links of all routes -->
+    <router-link v-for="route in $router.options.routes" :key="route.path" :to="route.path">
+      <span :class="route.meta.icon" />{{route.name}}
+    </router-link>
+  </nav>
 </template>
 
 <style>
