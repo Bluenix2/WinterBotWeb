@@ -1,9 +1,9 @@
 <template>
-  <div class="home">
+  <main class="home">
     <p v-if="hours < 12">Good morning!</p>
     <p v-if="hours > 12 && hours < 20">Good afternoon!</p>
     <p v-if="hours >= 20">You should go to bed, goodnight!</p>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">

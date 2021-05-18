@@ -6,7 +6,7 @@ export interface State {
 
 export default createStore<State>({
   state: {
-    sidebarActive: false,
+    sidebarActive: true,
   },
   mutations: {
     toggleSidebar(state: State) {

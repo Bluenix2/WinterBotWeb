@@ -1,9 +1,11 @@
 <template>
   <Masthead />
-  <Sidebar />
+  <div id="content">
+    <Sidebar />
 
-  <!-- Display the current view we're on -->
-  <router-view />
+    <!-- Display the current view we're on -->
+    <router-view />
+  </div>
 </template>
 
 <script lang="ts">
@@ -20,3 +22,11 @@ import Sidebar from './components/Sidebar.vue'
 })
 export default class App extends Vue {}
 </script>
+
+<style>
+#content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+</style>

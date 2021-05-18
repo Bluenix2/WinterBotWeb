@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <main class="about">
     <h1>Discord bot managing the Project Winter server!</h1>
-  </div>
+  </main>
 </template>
